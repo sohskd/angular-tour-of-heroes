@@ -1,0 +1,49 @@
+<!-- <ul class="mrrequests">
+  <li *ngFor="let request of mrrequests">
+    <span class="badge">{{request.id}}</span>
+    <span class="badge">{{request.country}}</span>
+    <span class="badge">{{request.region}}</span>
+    <span class="badge">{{request.lob}}</span>
+    <span class="badge">{{request.topic}}</span>
+    <span class="badge">{{request.speakerName}}</span>
+    <span class="badge">{{request.submittedDate}}</span>
+    <span class="badge">{{request.daysLeftToMeetSla}}</span>
+    <span class="badge">{{request.status}}</span>
+  </li>
+</ul> -->
+
+<!-- -------------------------------------------->
+<!--
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Country</th>
+        <th>Region</th>
+        <th>LOB</th>
+        <th>Topic</th>
+        <th>Speaker Name</th>
+        <th>Submitted Date</th>
+        <th>Days left to meet SLA</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let request of mrrequests">
+        <td>{{ request.id }}</td>
+        <td>{{ request.country}}</td>
+        <td>{{ request.region }}</td>
+        <td>{{ request.lob }}</td>
+        <td>{{ request.topic }}</td>
+        <td>{{ request.speakerName }}</td>
+        <td>{{ request.submittedDate }}</td>
+        <td>{{ request.daysLeftToMeetSla }}</td>
+        <td>{{ request.status }}</td>
+      </tr>
+    </tbody>
+</table> -->
+
+<ng2-smart-table
+    [settings]="settings"
+    [source]="mrrequests">
+</ng2-smart-table>
